@@ -8,6 +8,7 @@ def uninformed_path_finder(cities, roads, start_city, goal_city, strategy, weigh
         raise ValueError("Strategy must be 'bfs' or 'dfs'")
 
     if strategy == 'bfs':
+        
         if weighted:
             frontier = [(0, start_city, [start_city])]
             heapq.heapify(frontier)
